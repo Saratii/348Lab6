@@ -1,0 +1,15 @@
+<head>
+  <style>
+    .text {
+      color: var(--font-color, black);
+      border: var(--border-width, 1px) solid var(--border-color, black);
+    }
+  </style>
+</head>
+<body>
+  <label>Font Color: <input oninput="document.body.style.setProperty('--font-color', this.value)" placeholder="rgb(0,0,0)"></label>
+  <label>Border Color: <input oninput="document.body.style.setProperty('--border-color', this.value)" placeholder="rgb(0,0,0)"></label>
+  <label>Border Width: <input oninput="document.body.style.setProperty('--border-width', this.value)" placeholder="1px"></label>
+  <p class="text">A paragraph with some text.</p>
+</body>
+</html>

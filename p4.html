@@ -1,0 +1,22 @@
+<body>
+  <form method="post">
+    <input type="number" name="num" placeholder="Enter number">
+    <button type="submit">Execute</button>
+  </form>
+
+  <?php
+    if (isset($_POST["num"])) {
+      $num = (int)$_POST["num"];
+      echo "<table border='1'>";
+      for ($i = 1; $i <= $num; $i++) {
+        echo "<tr>";
+        for ($j = 1; $j <= $num; $j++) {
+          echo "<td>$i x $j = " . ($i * $j) . "</td>";
+        }
+        echo "</tr>";
+      }
+      echo "</table>";
+    }
+  ?>
+</body>
+</html>
